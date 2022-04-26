@@ -14,8 +14,16 @@ ros-melodic-map-server \
 ros-melodic-amcl \
 ros-melodic-global-planner \
 ros-melodic-teb-local-planner \
-ros-melodic-cartographer-node
+ros-melodic-cartographer-node \
+python-pip
 echo "Now dowloading gazebo models...."
 
 # using gpproxy.com accelerate download
 git clone https://ghproxy.com/https://github.com/osrf/gazebo_models ~/.gazebo/models
+
+echo "Now update rosdep database using rosdepc...."
+sudo pip install rosdepc
+sudo rosdepc init
+rosdepc update
+rosdep install --from-paths src --ignore-src -r -y
+
