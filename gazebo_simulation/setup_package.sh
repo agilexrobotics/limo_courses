@@ -25,5 +25,5 @@ echo "Now update rosdep database using rosdepc...."
 sudo pip install rosdepc
 sudo rosdepc init
 rosdepc update
-rosdep install --from-paths src --ignore-src -r -y
+rosdepc install --from-paths src --ignore-src -r -y
 
