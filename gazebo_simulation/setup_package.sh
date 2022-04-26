@@ -5,8 +5,10 @@ ros-melodic-ros-control \
 ros-melodic-ros-controllers \
 ros-melodic-gazebo-ros \
 ros-melodic-gazebo-ros-control \
+ros-melodic-ros-controllers
 ros-melodic-joint-state-publisher-gui \
 ros-melodic-teleop-twist-keyboard \
+ros-melodic-joint-state-controller \
 ros-melodic-move-base \
 ros-melodic-robot-pose-ekf \
 ros-melodic-gmapping \
